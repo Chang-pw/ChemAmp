@@ -13,7 +13,7 @@ import time
 def main():
     parser = argparse.ArgumentParser(description="The Stacking framework")
     parser.add_argument('--Task', type=str, help="The chemical task for Agent", required=True)
-    parser.add_argument('--tools', type=str, help="The tools for Agent", required=True)
+    parser.add_argument('--tools', type=str, help="The tools for Agent", required=False)
     parser.add_argument('--topN', type=int, help="The top N of the tools for stacking", required=True)
     parser.add_argument('--tool_number', type=int, help="The number of tools for one Agent", required=True)
     parser.add_argument('--train_data_number', type=int, help="The number of training data", required=True)
