@@ -1,0 +1,252 @@
+[
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(ccc1[C@@H]2CC[NH2+]C[C@H]2COc3ccc4c(c3)OCO4)F\nFDA Approval:",
+        "SMILES": "c1cc(ccc1[C@@H]2CC[NH2+]C[C@H]2COc3ccc4c(c3)OCO4)F",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1cc(c(c(c1)Cl)Cl)c2c(nc(nn2)N)N",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: c1cc(c(c(c1)Cl)Cl)c2c(nc(nn2)N)N\nHaving clinical trial toxicity:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc2c(cc1F)CCC(O2)C(C[NH2+]CC(C3CCc4cc(ccc4O3)F)O)O\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1cc2c(cc1F)CCC(O2)C(C[NH2+]CC(C3CCc4cc(ccc4O3)F)O)O"
+    },
+    {
+        "SMILES": "c1ccc(cc1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)[O-])Cl)[NH3+]",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)[C@H](C(=O)N[C@H]2[C@H]3CCC(=C(N3C2=O)C(=O)[O-])Cl)[NH3+]\nFDA Approval:"
+    },
+    {
+        "SMILES": "C/C=C\\1/C(=O)N[C@H](C(=O)O[C@H]\\2CC(=O)N[C@@H](C(=O)N[C@H](CSSCC/C=C2)C(=O)N1)C(C)C)C(C)C",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: C/C=C\\1/C(=O)N[C@H](C(=O)O[C@H]\\2CC(=O)N[C@@H](C(=O)N[C@H](CSSCC/C=C2)C(=O)N1)C(C)C)C(C)C\nHaving clinical trial toxicity:"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)cccc2CC3=[NH+]CCN3",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)cccc2CC3=[NH+]CCN3\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)c(ns2)N3CC[NH+](CC3)CCc4cc5c(cc4Cl)NC(=O)C5",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: c1ccc2c(c1)c(ns2)N3CC[NH+](CC3)CCc4cc5c(cc4Cl)NC(=O)C5\nHaving clinical trial toxicity:"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)c(c(c(=O)o2)Cc3c(c4ccccc4oc3=O)[O-])[O-]",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)c(c(c(=O)o2)Cc3c(c4ccccc4oc3=O)[O-])[O-]\nFDA Approval:",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1ccc(cc1)[C@H]2c3ccccc3CCN2C(=O)O[C@H]4C[NH+]5CCC4CC5",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)[C@H]2c3ccccc3CCN2C(=O)O[C@H]4C[NH+]5CCC4CC5\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1ccc(cc1)n2c(ccn2)[N-]S(=O)(=O)c3ccc(cc3)N",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)n2c(ccn2)[N-]S(=O)(=O)c3ccc(cc3)N\nFDA Approval:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1[C@H](C(=O)NO1)[NH3+]\nFDA Approval:",
+        "SMILES": "C1[C@H](C(=O)NO1)[NH3+]",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1cc(ccc1C(=O)CCC[NH+]2CCC(CC2)(c3ccc(cc3)Cl)O)F",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: c1cc(ccc1C(=O)CCC[NH+]2CCC(CC2)(c3ccc(cc3)Cl)O)F\nHaving clinical trial toxicity:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(ccc1c2c(c3ccc(cc3s2)O)C(=O)c4ccc(cc4)OCC[NH+]5CCCCC5)O\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1cc(ccc1c2c(c3ccc(cc3s2)O)C(=O)c4ccc(cc4)OCC[NH+]5CCCCC5)O"
+    },
+    {
+        "SMILES": "c1ccc(cc1)CC2Nc3cc(c(cc3S(=O)(=O)N2)S(=O)(=O)N)C(F)(F)F",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)CC2Nc3cc(c(cc3S(=O)(=O)N2)S(=O)(=O)N)C(F)(F)F\nFDA Approval:",
+        "gold_answer": "Yes"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc2c(cc1Cl)[C@@](OC(=O)N2)(C#CC3CC3)C(F)(F)F\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1cc2c(cc1Cl)[C@@](OC(=O)N2)(C#CC3CC3)C(F)(F)F"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccn2c(c1)nn(c2=O)CCC[NH+]3CCN(CC3)c4cccc(c4)Cl\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1ccn2c(c1)nn(c2=O)CCC[NH+]3CCN(CC3)c4cccc(c4)Cl"
+    },
+    {
+        "gold_answer": "Yes",
+        "SMILES": "c1ccc(cc1)C2=NCC(=O)N(c3c2cc(cc3)Cl)CC4CC4",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)C2=NCC(=O)N(c3c2cc(cc3)Cl)CC4CC4\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1ccc(cc1)C(c2ccccc2)(C(=O)OC3CC4CCC(C3)[N+]45CCCC5)O",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)C(c2ccccc2)(C(=O)OC3CC4CCC(C3)[N+]45CCCC5)O\nFDA Approval:",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1ccc(cc1)[C@H]2CN3CCSC3=[NH+]2",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)[C@H]2CN3CCSC3=[NH+]2\nFDA Approval:"
+    },
+    {
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(ccc1C(=O)CCC[NH+]2CCC(CC2)(c3ccc(cc3)Cl)O)F\nFDA Approval:",
+        "SMILES": "c1cc(ccc1C(=O)CCC[NH+]2CCC(CC2)(c3ccc(cc3)Cl)O)F"
+    },
+    {
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1CCN(CC1)C(=O)C2=CC3=NON=C3C=C2\nFDA Approval:",
+        "SMILES": "C1CCN(CC1)C(=O)C2=CC3=NON=C3C=C2"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)CCN3C2CN(CC3=O)C(=O)C4CCCCC4\nFDA Approval:",
+        "SMILES": "c1ccc2c(c1)CCN3C2CN(CC3=O)C(=O)C4CCCCC4",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1ccc(cc1)C(=O)c2ccc3n2CCC3C(=O)[O-]",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)C(=O)c2ccc3n2CCC3C(=O)[O-]\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1c(c(cc(c1F)F)F)C[C@H](CC(=O)N2CCn3c(nnc3C(F)(F)F)C2)[NH3+]",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1c(c(cc(c1F)F)F)C[C@H](CC(=O)N2CCn3c(nnc3C(F)(F)F)C2)[NH3+]\nFDA Approval:"
+    },
+    {
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1=CC=C2C(=C1)C(=NN=C2NC3=CC=C(C=C3)Cl)CC4=CC=NC=C4\nFDA Approval:",
+        "SMILES": "C1=CC=C2C(=C1)C(=NN=C2NC3=CC=C(C=C3)Cl)CC4=CC=NC=C4"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)cc(c(c2Cc3c4ccccc4cc(c3O)C(=O)[O-])O)C(=O)[O-]",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)cc(c(c2Cc3c4ccccc4cc(c3O)C(=O)[O-])O)C(=O)[O-]\nFDA Approval:"
+    },
+    {
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccnc(c1)[N-]S(=O)(=O)c2ccc(cc2)/N=N/c3ccc(c(c3)C(=O)[O-])O\nFDA Approval:",
+        "SMILES": "c1ccnc(c1)[N-]S(=O)(=O)c2ccc(cc2)/N=N/c3ccc(c(c3)C(=O)[O-])O"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)c(c(c(=O)o2)Cc3c(c4ccccc4oc3=O)[O-])[O-]",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: c1ccc2c(c1)c(c(c(=O)o2)Cc3c(c4ccccc4oc3=O)[O-])[O-]\nHaving clinical trial toxicity:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(ccc1c2ccc(o2)/C=N/N3CC(=O)NC3=O)[N+](=O)[O-]\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1cc(ccc1c2ccc(o2)/C=N/N3CC(=O)NC3=O)[N+](=O)[O-]"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)CN(CC2=[NH+]CCN2)c3ccccc3\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1ccc(cc1)CN(CC2=[NH+]CCN2)c3ccccc3"
+    },
+    {
+        "gold_answer": "Yes",
+        "SMILES": "c1cc(c(cc1Cl)Cl)CO/N=C(/Cn2ccnc2)\\c3ccc(cc3Cl)Cl",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(c(cc1Cl)Cl)CO/N=C(/Cn2ccnc2)\\c3ccc(cc3Cl)Cl\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1cc2c(cc(nc2c(c1)C(F)(F)F)C(F)(F)F)C(C3CCCC[NH2+]3)O",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc2c(cc(nc2c(c1)C(F)(F)F)C(F)(F)F)C(C3CCCC[NH2+]3)O\nFDA Approval:"
+    },
+    {
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](O[C@@]([C@H]2O)(CO)O)CO)O)O)O)O\nFDA Approval:",
+        "SMILES": "C([C@@H]1[C@@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2[C@H](O[C@@]([C@H]2O)(CO)O)CO)O)O)O)O"
+    },
+    {
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)c2c(nc3c(n2)c(nc(n3)N)N)N\nFDA Approval:",
+        "SMILES": "c1ccc(cc1)c2c(nc3c(n2)c(nc(n3)N)N)N"
+    },
+    {
+        "SMILES": "C[C@@](c1ccccc1)(c2ccc(cc2)Cl)OCC[C@H]3CCC[NH+]3C",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: C[C@@](c1ccccc1)(c2ccc(cc2)Cl)OCC[C@H]3CCC[NH+]3C\nHaving clinical trial toxicity:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)CC(=O)c3ccccc3N2C(=O)N\nFDA Approval:",
+        "SMILES": "c1ccc2c(c1)CC(=O)c3ccccc3N2C(=O)N",
+        "gold_answer": "Yes"
+    },
+    {
+        "SMILES": "c1cc(ccc1CSC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(ccc1CSC(Cn2ccnc2)c3ccc(cc3Cl)Cl)Cl\nFDA Approval:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C([C@@H]1[C@H]([C@@H]([C@H](C(=O)O1)O)O)O)O\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "C([C@@H]1[C@H]([C@@H]([C@H](C(=O)O1)O)O)O)O"
+    },
+    {
+        "SMILES": "C1[C@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2CO[C@H]([C@@H]([C@H]2OS(=O)(=O)[O-])OS(=O)(=O)[O-])O)OS(=O)(=O)[O-])OS(=O)(=O)[O-])O",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1[C@H]([C@@H]([C@H]([C@@H](O1)O[C@@H]2CO[C@H]([C@@H]([C@H]2OS(=O)(=O)[O-])OS(=O)(=O)[O-])O)OS(=O)(=O)[O-])OS(=O)(=O)[O-])O\nFDA Approval:"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1[nH]c(=O)c2c(n1)n(cn2)[C@H]3CC[C@H](O3)CO\nFDA Approval:",
+        "SMILES": "c1[nH]c(=O)c2c(n1)n(cn2)[C@H]3CC[C@H](O3)CO",
+        "gold_answer": "Yes"
+    },
+    {
+        "gold_answer": "No",
+        "SMILES": "C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1CC(=O)NC2=C1C=CC(=C2)OCCCCN3CCN(CC3)C4=C(C(=CC=C4)Cl)Cl\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)CCCC2C3=[NH+]CCN3",
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)CCCC2C3=[NH+]CCN3\nFDA Approval:"
+    },
+    {
+        "SMILES": "c1ccc(cc1)C(CC[NH+]2CCCC2)(C3CCCCC3)O",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)C(CC[NH+]2CCCC2)(C3CCCCC3)O\nFDA Approval:",
+        "gold_answer": "Yes"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: [H]/[NH+]=C(/C1=CC(=O)/C(=C\\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\\N\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "[H]/[NH+]=C(/C1=CC(=O)/C(=C\\C=c2ccc(=C([NH3+])N)cc2)/C=C1)\\N"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)c(c3c([nH+]2)CCCC3)N",
+        "gold_answer": "No",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has clinical trial toxicity or not, based on the SMILES string representation of each molecule. Please answer with only Yes (having clinical trial toxicity) or No (not having clinical trial toxicity).SMILES: c1ccc2c(c1)c(c3c([nH+]2)CCCC3)N\nHaving clinical trial toxicity:"
+    },
+    {
+        "gold_answer": "Yes",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc(cc1)[C@H]2c3ccccc3CCN2C(=O)O[C@H]4C[NH+]5CCC4CC5\nFDA Approval:",
+        "SMILES": "c1ccc(cc1)[C@H]2c3ccccc3CCN2C(=O)O[C@H]4C[NH+]5CCC4CC5"
+    },
+    {
+        "SMILES": "c1ccc2c(c1)c(ns2)N3CC[NH+](CC3)C[C@@H]4CCCC[C@H]4CN5C(=O)[C@H]6[C@@H]7CC[C@@H](C7)[C@H]6C5=O",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1ccc2c(c1)c(ns2)N3CC[NH+](CC3)C[C@@H]4CCCC[C@H]4CN5C(=O)[C@H]6[C@@H]7CC[C@@H](C7)[C@H]6C5=O\nFDA Approval:",
+        "gold_answer": "Yes"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: C1CCCN(CCC1)CC[NH+]=C(N)N\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "C1CCCN(CCC1)CC[NH+]=C(N)N"
+    },
+    {
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(c(cc1C(=O)Nc2c(cncc2Cl)Cl)OCC3CC3)OC(F)F\nFDA Approval:",
+        "gold_answer": "Yes",
+        "SMILES": "c1cc(c(cc1C(=O)Nc2c(cncc2Cl)Cl)OCC3CC3)OC(F)F"
+    },
+    {
+        "SMILES": "c1cc(c(c2c1nccn2)Br)NC3=[NH+]CCN3",
+        "Question": "You are an expert chemist, your task is to predict the property of molecules using your experienced chemical property prediction knowledge.\nPlease strictly follow the format, no other information can be provided. Given the SMILES string of a molecule, the task focus on predicting molecular properties, specifically whether the drug molecule has approved by the FDA or failed clinical trials for toxicity reasons, based on the SMILES string representation of each molecule. Please answer with only Yes (approved by FDA) or No (failed clinical trials for toxicity reasons).SMILES: c1cc(c(c2c1nccn2)Br)NC3=[NH+]CCN3\nFDA Approval:",
+        "gold_answer": "Yes"
+    }
+]
