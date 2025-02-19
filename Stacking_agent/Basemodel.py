@@ -5,38 +5,26 @@ import time
 import random
 import dashscope
 from http import HTTPStatus
+from dotenv import load_dotenv
+from pathlib import Path
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(env_path)
 
-def get_Llama_api(message,stop_word):
-    messages = message
-    response = dashscope.Generation.call(
-        # model='llama3.3-70b-instruct',
-        api_key='Your api-key',
-        model='llama3.1-8b-instruct',
-        messages=messages,
-        result_format='message',  # set the result to be "message" format.
-        stop = [stop_word],
-        temperature = 0.7
-    )
-    time.sleep(2)
-    if response.status_code == HTTPStatus.OK:
-        return response['output']['choices'][0]['message']['content']
-    else:
-        print('Request id: %s, Status code: %s, error code: %s, error message: %s' % (
-            response.request_id, response.status_code,
-            response.code, response.message
-        ))
-        return "Error"
+AZURE_API_KEY = os.getenv("AZURE_API_KEY")
+AZURE_API_ENDPOINT=os.getenv("AZURE_API_ENDPOINT")
+AZURE_API_VERSION=os.getenv("AZURE_API_VERSION")
+
+if not AZURE_API_KEY or AZURE_API_ENDPOINT or AZURE_API_VERSION:
+    raise ValueError("Please set your API_KEY in file .env")
 
 
 class ChatModel():
     def __init__(self, model="gpt-4o", temperature=0.7):
         self.model = model
         self.temperature = temperature
-        self.Llama = False
-        self.openai = True
         os.environ["OPENAI_API_TYPE"] = "azure"
-        self.api_keys = "[Your api-keys]"
-        self.api_endpoints = "[Your api-endpoints]"
+        self.api_keys = AZURE_API_KEY
+        self.api_endpoints = AZURE_API_ENDPOINT
     def chat(self, prompt: str, history: List[Dict[str, str]], system_prompt: str = 'You are a helpful assistant',stop_word:str='') -> str:
         """
         Get response with the prompt,history and system prompt.
@@ -55,35 +43,28 @@ class ChatModel():
             messages.append(entry)
         messages.append({"role": "user", "content": prompt})
 
-        if self.openai:
-            chosen_index = random.randint(0, len(self.api_keys) - 1)
-            chosen_key = self.api_keys[chosen_index]
-            chosen_endpoint = self.api_endpoints[chosen_index]
-            
-            client = AzureOpenAI(
-                api_key=chosen_key,
-                api_version="2024-08-01-preview",
-                azure_endpoint=chosen_endpoint
+        chosen_index = random.randint(0, len(self.api_keys) - 1)
+        chosen_key = self.api_keys[chosen_index]
+        chosen_endpoint = self.api_endpoints[chosen_index]
+        
+        client = AzureOpenAI(
+            api_key=chosen_key,
+            api_version=AZURE_API_VERSION,
+            azure_endpoint=chosen_endpoint
+        )
+        try:
+            response = client.chat.completions.create(
+                model=self.model,
+                messages=messages,
+                temperature=self.temperature,
+                stop = stop_word
             )
-            try:
-                response = client.chat.completions.create(
-                    model=self.model,
-                    messages=messages,
-                    temperature=self.temperature,
-                    stop = stop_word
-                )
-            except Exception as e:
-                print(e)
-                return "Run Again",history
-            total_tokens =0
-            total_tokens = response.usage.total_tokens
-            response = response.choices[0].message.content
-        if self.Llama:
-            try:
-                response = get_Llama_api(messages,stop_word)
-            except Exception as e:
-                print(e)
-                return "Run Again",history
+        except Exception as e:
+            print(e)
+            return "Run Again",history
+        total_tokens =0
+        total_tokens = response.usage.total_tokens
+        response = response.choices[0].message.content
             
         history.append({"role": "assistant", "content": response})
         try:

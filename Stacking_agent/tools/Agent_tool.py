@@ -8,7 +8,7 @@ class Agent_tool:
     task_query = ''
 
     def __init__(self,agent,data=[],description='',next_n=True,debug=False,data_index=0,**tool_args):
-        with Agent_tool.instance_lock:  # 加锁，确保线程安全
+        with Agent_tool.instance_lock: 
             if next_n:
                 Agent_tool.instance_count += 1
             self.number = Agent_tool.instance_count

@@ -8,7 +8,7 @@ def get_ChemT5_data():
     num_beams = 10
 
     tokenizer = AutoTokenizer.from_pretrained("./multitask-text-and-chemistry-t5-base-augm")
-    model = AutoModelForSeq2SeqLM.from_pretrained("./my_agent/temp/multitask-text-and-chemistry-t5-base-augm")
+    model = AutoModelForSeq2SeqLM.from_pretrained("./multitask-text-and-chemistry-t5-base-augm")
 
     import json
     with open("./Dataset/ReactionPrediction/test.json", 'r', encoding='utf-8') as f:

@@ -1,10 +1,21 @@
-import os
 from openai import OpenAI
+from dotenv import load_dotenv
+import os
+from pathlib import Path
+
+env_path = Path(__file__).parent.parent / ".env"
+load_dotenv(env_path)
+ALI_API_KEY = os.getenv("ALI_API_KEY")
+if not ALI_API_KEY:
+    raise ValueError("Please set your API_KEY in file .env")
+
+
+
 
 def get_deepseek(query):
     client = OpenAI(
         # 若没有配置环境变量，请用百炼API Key将下行替换为：api_key="sk-xxx",
-        api_key="sk-5a5dd944e6794717b486a601360a3493",
+        api_key=ALI_API_KEY,
         base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
     )
     completion = client.chat.completions.create(
@@ -16,20 +27,16 @@ def get_deepseek(query):
         stream=True
         )
 
-    # 定义完整思考过程
     reasoning_content = ""
     # 定义完整回复
     answer_content = ""
     for chunk in completion:
         # 获取思考过程
         reasoning_chunk = chunk.choices[0].delta.reasoning_content
-        # 获取回复
         answer_chunk = chunk.choices[0].delta.content
-        # 如果思考过程不为空，则打印思考过程
         if reasoning_chunk != "":
             # print(reasoning_chunk,end="")
             reasoning_content += reasoning_chunk
-        # 如果回复不为空，则打印回复。回复一般会在思考过程结束后返回
         elif answer_chunk != "":
             # print(answer_chunk,end="")
             answer_content += answer_chunk
@@ -59,7 +66,3 @@ class Deepseek():
             return get_deepseek(query),0
         except:
             return "Error",0
-
-
-if __name__ == "__main__":
-    print(get_deepseek('你好'))

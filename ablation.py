@@ -21,7 +21,7 @@ def run_stacking(tdn, file_path, tools, topN, tool_number, task, task_query):
 def ablation(task, topN, tool_number, tools, task_query):
     all_result = []
     print(task)
-    if any(keyword in task for keyword in ["MolecularPropertyPrediction", "ReagentSelection", "YieldPrediction"]):
+    if any(keyword in task for keyword in ["MolecularPropertyPrediction"]):
         task_name = task.split('_')[-1]
         task_ = task.split('_')[0]
         file_path = f'./Dataset/{task_}/{task_name}/train.json'
