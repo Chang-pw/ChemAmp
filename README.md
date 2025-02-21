@@ -72,7 +72,7 @@ The code of `Multiagent.py`  refers to [GPTSwarm](https://github.com/metauto-ai/
 
 ## Citation
 
-```bash
+```
 @misc{li2025chemhtshierarchicaltoolstacking,
       title={ChemHTS: Hierarchical Tool Stacking for Enhancing Chemical Agents}, 
       author={Zhucong Li and Jin Xiao and Bowei Zhang and Zhijian Zhou and Qianyu He and Fenglei Cao and Jiaqing Liang and Yuan Qi},
