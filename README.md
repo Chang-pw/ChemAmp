@@ -1,7 +1,7 @@
 # ChemHAS
 ChemHAS (Chemical Hierarchical Agent Stacking) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
 
-Our paper: [arXiv](https://arxiv.org/abs/2502.14327)
+
 
 ## Overview
 
@@ -70,16 +70,4 @@ python Multiagent.py --mode Chain --agents 0 --no_tool True
 
 The code of `Multiagent.py`  refers to [GPTSwarm](https://github.com/metauto-ai/GPTSwarm) and [AgentPrune](https://github.com/yanweiyue/AgentPrune.git)
 
-## Citation
 
-```
-@misc{li2025chemhtshierarchicaltoolstacking,
-      title={ChemHTS: Hierarchical Tool Stacking for Enhancing Chemical Agents}, 
-      author={Zhucong Li and Jin Xiao and Bowei Zhang and Zhijian Zhou and Qianyu He and Fenglei Cao and Jiaqing Liang and Yuan Qi},
-      year={2025},
-      eprint={2502.14327},
-      archivePrefix={arXiv},
-      primaryClass={cs.CE},
-      url={https://arxiv.org/abs/2502.14327}, 
-}
-```
