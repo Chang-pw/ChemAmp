@@ -6,7 +6,7 @@ Our paper: [arXiv](https://arxiv.org/abs/2502.14327)
 ## Overview
 
 
-![intro](png/intro.png)
+![intro](png/intro.jpg)
 
 
 ## Start
