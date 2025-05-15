@@ -1,5 +1,5 @@
-# ChemHTS
-ChemHTS (Chemical Hierarchical Tool Stacking) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks by optimizing tool invocation pathways through a hierarchical stacking strategy
+# ChemHAS
+ChemHAS (Chemical Hierarchical Agent Stacking) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
 
 Our paper: [arXiv](https://arxiv.org/abs/2502.14327)
 
