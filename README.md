@@ -1,5 +1,5 @@
 # ChemAmp
-ChemHAS (Chemical Amplified Chemistry Tools) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
+ChemAmp (Chemical Amplified Chemistry Tools) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
 
 
 
