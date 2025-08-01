@@ -1,12 +1,12 @@
-# ChemHAS
-ChemHAS (Chemical Hierarchical Agent Stacking) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
+# ChemAmp
+ChemHAS (Chemical Amplified Chemistry Tools) is a novel method designed to enhance the performance of Large Language Models (LLMs) in chemistry tasks.
 
 
 
 ## Overview
 
 
-![intro](png/Intro.jpg)
+![intro](png/Intro.png)
 
 
 ## Start
