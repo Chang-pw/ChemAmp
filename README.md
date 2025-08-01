@@ -14,8 +14,8 @@ ChemHAS (Chemical Amplified Chemistry Tools) is a novel method designed to enhan
 ### Install packages
 
 ```bash
-conda create -n ChemHTS python=3.10
-conda activate ChemHTS
+conda create -n ChemAmp python=3.10
+conda activate ChemAmp
 pip install -r requirements.txt
 ```
 
