@@ -148,18 +148,21 @@ python Multiagent.py --mode Chain --agents 0 --no_tool True
 | 反应预测 | 反应方程式 | 产物 SMILES | BLEU-2 |
 | 分子性质预测 | SMILES | Yes/No | AUC-ROC |
 
-<!-- ## 引用
+## 引用
 
 如果您觉得本工作有帮助，请引用：
 
 ```bibtex
-@inproceedings{zhang2026chemamp,
-      title={ChemAmp: Amplified Chemistry Tools via Composable Agents},
-      author={Bowei Zhang and ...},
+@misc{li2026chemampamplifiedchemistrytools,
+      title={ChemAmp: Amplified Chemistry Tools via Composable Agents}, 
+      author={Zhucong Li and Powei Chang and Jin Xiao and Zhijian Zhou and Qianyu He and Jiaqing Liang and Fenglei Cao and Xu Yinghui and Yuan Qi},
       year={2026},
-      booktitle={Findings of the Association for Computational Linguistics: ACL 2026},
+      eprint={2505.21569},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2505.21569}, 
 }
-``` -->
+```
 
 
 ## 许可证
